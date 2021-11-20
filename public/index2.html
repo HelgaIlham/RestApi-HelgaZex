@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rest Api - Helga Zex</title>
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU"><link rel="stylesheet" href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU"><link rel="stylesheet" href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+    <script src="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+    <meta property="og:title" content="Helga Zex Rest Api"/>  
+    <meta name="description" content=" Free Rest Api ">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Wk6KnE7aJHUHjpp_wBoDfkeSIOQfSGMmxg&usqp=CAU">
+  </head>
+  <body>
+  <body id="page-top" onload="getvisitor();">
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo rounded-circle" href="#"><img src="images/logo1.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="#"><img src="images/logo1.png" class="rounded-circle" alt="logo" /></a>
+        </div>
+       <font face="Original Surfer">
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="https://k.top4top.io/p_21502xe2o0.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Ahmad Farhan</h5>
+                  <span>17 Tahun, Banyuwangi</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Helga Zex - APIs</span>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" href="/docs">
+          <span class="menu-icon">
+          <i class="mdi mdi-home"></i>
+          </span>
+          <span class="menu-title">All Features</span>
+          </a>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-downloader" aria-expanded="false" aria-controls="ui-downloader">
+          <span class="menu-icon">
+          <i class="mdi mdi-download"></i>
+          </span>
+          <span class="menu-title">Downloader API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-downloader">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/download/ytmp3?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=HelgaZex">Yt Mp3 Download</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/download/ytmp4?url=https://youtu.be/Nq5rzeJ5Ab4&apikey=HelgaZex">Yt Mp4 Download</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/yt/playmp3?query=Monolog-pamungkas&apikey=HelgaZex">Yt Play Mp3</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/yt/playmp4?query=Monolog-pamungkas&apikey=HelgaZex">Yt Play Mp4</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/yt/search?query=Monolog-pamungkas&apikey=HelgaZex">Yt Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/download/fb?apikey=HelgaZex&url=https://www.facebook.com/alanwalkermusic/videos/277641643524720">Facebook Download</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/download/ig?apikey=HelgaZex&url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr">Instagram Download</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/download/tiktok?apikey=HelgaZex&url=https://vt.tiktok.com/ZSJhvu1AE/">Tiktok Download</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/music/joox?apikey=HelgaZex&query=monolog pamungkas">Joox Download</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/music/spotify?apikey=HelgaZex&query=ignite">Spotify Download</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-islamic" aria-expanded="false" aria-controls="ui-islamic">
+          <span class="menu-icon">
+          <i class="mdi mdi-star"></i>
+          </span>
+          <span class="menu-title">Islamic API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-islamic">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/asmaulhusna?apikey=HelgaZex">Asmaul Husna</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/surah?apikey=HelgaZex&no=10">Surah Number</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/hadits?kitab=bukhari&nomor=52&apikey=HelgaZex">Hadist Sahih</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/quran?surah=1&ayat=2&apikey=HelgaZex">Al-Qur'an Surah</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/kisahnabi?nabi=muhammad&apikey=HelgaZex">Kisah Nabi</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/muslim/jadwalshalat?query=banyuwangi&apikey=HelgaZex">Jadwal Sholat</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-stalker" aria-expanded="false" aria-controls="ui-stalker">
+          <span class="menu-icon">
+          <i class="mdi mdi-chart-bar"></i>
+          </span>
+          <span class="menu-title">Stalker API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-stalker">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/stalk/ig?apikey=HelgaZex&username=only_fxc7">Instagram Stalker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/stalk/github?apikey=HelgaZex&username=Fxc7">Github Stalker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/stalk/tiktok?apikey=HelgaZex&username=chikaku">Tiktok Stalker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/stalk/npm?apikey=HelgaZex&query=zhirrr-api&hostname=zhirrr">NPM Stalker</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-img-maker" aria-expanded="false" aria-controls="ui-img-maker">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-multiple-image"></i>
+          </span>
+          <span class="menu-title">Image Maker API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-img-maker">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/url2img?apikey=HelgaZex&url=https://fxc7-api.herokuapp.com">Url To Image</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/nulis?apikey=HelgaZex&text=Awokwokwok Mager yaa:v">Maker Nulis</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/nulis2?apikey=HelgaZex&text=Awokwokwok Mager yaa:v">Maker Nulis 2</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/remove-bg?apikey=beta&url=https://tinyurl.com/fhszp24">Remove Background</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/emoji2png?apikey=HelgaZex&text=😂">Emoji To Png</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/welcome?apikey=HelgaZex&name=Farhan&ucapan=Hai Welcome&memcount=10&gcname=Fxc7 Team&pp=https://tinyurl.com/wmxnk6">Welcome Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/goodbye?apikey=HelgaZex&name=Farhan&ucapan=Goof Bye&memcount=10&gcname=Fxc7 Team&pp=https://tinyurl.com/wmxnk6">Good Bye Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/serti_tolol?apikey=HelgaZex&text=Manurios">Sertifikat Tolol</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/serti-ff?apikey=HelgaZex&text=Farhan">Sertifikat FF</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/carbon?apikey=HelgaZex&text=Farhan">Carbon Text</a></li>
+          <hr>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/tobecontinue?apikey=HelgaZex&url=https://tinyurl.com/wmxnk6">To Be Continue Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/wasted?apikey=HelgaZex&url=https://tinyurl.com/wmxnk6">Wasted Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/wanted?apikey=HelgaZex&url=https://tinyurl.com/wmxnk6">Wanted Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/wanted2?apikey=HelgaZex&text=Farhan&url=https://tinyurl.com/wmxnk6">Wanted 2 Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/trigger?apikey=HelgaZex&url=https://tinyurl.com/wmxnk6">Triggered Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/ttp?apikey=HelgaZex&text=Farhan">Text To Picture</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/maker/attp?apikey=HelgaZex&text=Fxc7">Animation Text To Picture</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-photooxy" aria-expanded="false" aria-controls="ui-photooxy">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-image"></i>
+          </span>
+          <span class="menu-title">Photooxy API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-photooxy">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/ocean-sea?apikey=HelgaZex&text=Farhan">Ocean Sea Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/pubg?apikey=HelgaZex&text1=Farhan&text2=Gans">PUBG Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/shadow?apikey=HelgaZex&text=Farhan">Shadow Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/rainbow?apikey=HelgaZex&text=Farhan">Rainbow Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/gravity?apikey=HelgaZex&text=Farhan">Gravity Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/burn-paper?apikey=HelgaZex&text=Farhan">Burn Paper Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/smoke?apikey=HelgaZex&text=Farhan">Smoke Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/romantic?apikey=HelgaZex&text=Farhan">Romantic Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/naruto?apikey=HelgaZex&text=Farhan">Naruto Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/love-message?apikey=HelgaZex&text=Farhan">Love Message Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/message-under-grass?apikey=HelgaZex&text=Farhan">Under Grass Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/glitch?apikey=HelgaZex&text1=Farhan&text2=Rest Api">Glitch Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/double-heart?apikey=HelgaZex&text=Farhan">Double Heart Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/coffe-cup?apikey=HelgaZex&text=Farhan">Coffe Cup Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/love-text?apikey=HelgaZex&text=Farhan">Love Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/butterfly?apikey=HelgaZex&text=Farhan">ButterFly Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/wood-block?apikey=HelgaZex&text=Farhan">Wood Block Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/slide-text?apikey=HelgaZex&text=Farhan Gans">Slide Text To Video</a></li>
+          <hr>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/toilet?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Toilet Maker Photo</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/math-bg?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Background Math Photo</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/christmas-card?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Christmas Card Photo</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/love-3d?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6&text2=Farhan&text3=Fxc7 Team">Love 3D Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/game-effect?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6&text2=Farhan&text3=Fxc7 Team">Game Cool Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/cross-gun?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Cross Gun Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/gtav?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">GTAV Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/animation-fire?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Fire Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/facebook?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6&text=cewe parhan:v">Facebook Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/rain-drops?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Rain Drops Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/painting?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Painting Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/glitch-effect?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Glitch Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/art?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Art Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/tear?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Tear Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/collage?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Collage Photo Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/rain-gif?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Rain Gif Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/beautiful-pine?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Beautiful Sketch Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/iphone-frames?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Iphone Frames Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/pencil-sketch?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Pencil Sketch Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photooxy/memory-photo?apikey=HelgaZex&url=https://tinyurl.com/2hjc3jj6">Memory Photo Maker</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-photofunia" aria-expanded="false" aria-controls="ui-photofunia">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-image"></i>
+          </span>
+          <span class="menu-title">Photofunia API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-photofunia">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/christmas?apikey=HelgaZex&text=Farhan">Christmas Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/light-gravity?apikey=HelgaZex&text=Farhan">Light Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/snow-sign?apikey=HelgaZex&text=Farhan">Snow Sign Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/glass-bauble?apikey=HelgaZex&text=Farhan&text2=Iriene">Glass Bauble Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/frosty?apikey=HelgaZex&text=Farhan">Frosty Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/water-writing?apikey=HelgaZex&text=Farhan">Water Writing Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/neon-writing?apikey=HelgaZex&text=Farhan&text2=Iriene">Neon Writing Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/neon-sign?apikey=HelgaZex&text=Farhan Iriene">Neon Sign Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/einstein?apikey=HelgaZex&text=Farhan">Einstein Text Maker</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/hotel?apikey=HelgaZex&text=Farhan">Hotel Hallowen Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/snow?apikey=HelgaZex&text1=Farhan&text2=Iriene">Snow Write Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/photofunia/newspaper?apikey=HelgaZex&text=Cewenya Farhan&url=https://tinyurl.com/2hjc3jj6">Newspaper Text</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-textpro" aria-expanded="false" aria-controls="ui-textpro">
+          <span class="menu-icon">
+          <i class="mdi mdi-folder-image"></i>
+          </span>
+          <span class="menu-title">Textpro ME API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-textpro">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/beach?apikey=HelgaZex&text=Farhan">Beach Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/blood?apikey=HelgaZex&text=Farhan">Blood Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/blood2?apikey=HelgaZex&text=Farhan">Blood 2 Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/thunder?apikey=HelgaZex&text=Farhan">Thunder Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/neon?apikey=HelgaZex&text=Farhan">Neon Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/neon2?apikey=HelgaZex&text=Farhan">Neon 2 Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/neon3?apikey=HelgaZex&text=Farhan">Neon 3 Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/pornhub?apikey=HelgaZex&text=Farhan&text2=Hub">Pornhub Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/green-neon?apikey=HelgaZex&text=Farhan">Green Neon Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/sparkle?apikey=HelgaZex&text=Farhan">Sparkle Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/minion?apikey=HelgaZex&text=Farhan">Minion Text Effect</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/textpro/dropwater?apikey=HelgaZex&text=Farhan">Drop Water Text Effect</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-fun" aria-expanded="false" aria-controls="ui-fun">
+          <span class="menu-icon">
+          <i class="mdi mdi-emoticon-happy"></i>
+          </span>
+          <span class="menu-title">Fun API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-fun">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/fun/caklontong?apikey=HelgaZex">Kuis Cak Lontong</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/fun/tebakgambar?apikey=HelgaZex">Kuis Tebak Gambar</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/fun/tebak-bendera?apikey=HelgaZex">Kuis Tebak Bendera</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/fun/family-100?apikey=HelgaZex">Kuis Family 100</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-anime" aria-expanded="false" aria-controls="ui-anime">
+          <span class="menu-icon">
+          <i class="mdi mdi-cat"></i>
+          </span>
+          <span class="menu-title">Anime & Manga API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-anime">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/kusonime?search=planetarian&apikey=HelgaZex">Anime Kusonime</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/manga?search=kimetsu no yaiba&apikey=HelgaZex">Manga Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/loli?apikey=HelgaZex">Random Loli</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/loli2?apikey=HelgaZex">Random Loli 2</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/waifu?apikey=HelgaZex">Random Waifu</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/neko?apikey=HelgaZex">Random Neko</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/anime/husbu?apikey=HelgaZex">Random Husbu</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-sfw" aria-expanded="false" aria-controls="ui-sfw">
+          <span class="menu-icon">
+          <i class="mdi mdi-panda"></i>
+          </span>
+          <span class="menu-title">Sfw API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-sfw">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/ereshkigal?apikey=HelgaZex">SFW Ereshkigal</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/davinci?apikey=HelgaZex">SFW Davinci</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/abigail?apikey=HelgaZex">SFW Abigail</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/genshin_impact?apikey=HelgaZex">SFW Genshin_impact</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/anews?apikey=HelgaZex">SFW anews</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/fgo?apikey=HelgaZex">SFW Fgo</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/furry?apikey=HelgaZex">SFW Furry</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/azur_lane?apikey=HelgaZex">SFW Azur_Lane</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/girls_frontline?apikey=HelgaZex">SFW Girls_frontline</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/league_of_legends?apikey=HelgaZex">SFW League_of_legends</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/dota_2?apikey=HelgaZex">SFW Dota_2</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/anastasia?apikey=HelgaZex">SFW Anastasia</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/artoria?apikey=HelgaZex">SFW Artoria</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/bb?apikey=HelgaZex">SFW BB</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/sfw/consort_yu?apikey=HelgaZex">SFW Consort_Yu</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-nsfw" aria-expanded="false" aria-controls="ui-nsfw">
+          <span class="menu-icon">
+          <i class="mdi mdi-paw"></i>
+          </span>
+          <span class="menu-title">Nsfw API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-nsfw">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/ahegao?apikey=HelgaZex">NSFW Ahegao</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/jav?apikey=HelgaZex">NSFW Jav</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/twitter?apikey=HelgaZex">NSFW Twitter</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/fgo?apikey=HelgaZex">NSFW Fgo</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/furry?apikey=HelgaZex">NSFW Furry</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/azur_lane?apikey=HelgaZex">NSFW Azur_Lane</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/genshin_impact?apikey=HelgaZex">NSFW Genshin_impact</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/girls_frontline?apikey=HelgaZex">NSFW Girls_frontline</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/league_of_legends?apikey=HelgaZex">NSFW League_of_legends</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/dota_2?apikey=HelgaZex">NSFW Dota_2</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/abigail?apikey=HelgaZex">NSFW Abigail</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/anastasia?apikey=HelgaZex">NSFW Anastasia</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/artoria?apikey=HelgaZex">NSFW Artoria</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/bb?apikey=HelgaZex">NSFW BB</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/consort_yu?apikey=HelgaZex">NSFW Consort_Yu</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/davinci?apikey=HelgaZex">NSFW Davinci</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/nsfw/ereshkigal?apikey=HelgaZex">NSFW Ereshkigal</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-random" aria-expanded="false" aria-controls="ui-random">
+          <span class="menu-icon">
+          <i class="mdi mdi-xing"></i>
+          </span>
+          <span class="menu-title">Random API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-random">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cerpen?apikey=HelgaZex&category=cinta">Random Cerpen Cinta</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cerpen?apikey=HelgaZex&category=perjuangan">Random Cerpen Perjuangan</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cerpen?apikey=HelgaZex&category=horor">Random Cerpen Horor</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cerpen?apikey=HelgaZex&category=lucu">Random Cerpen Lucu</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cerpen?apikey=HelgaZex&category=sahabat">Random Cerpen Sahabat</a></li>
+          <hr>
+          <li class="nav-item"> <a class="nav-link" href="/api/dadu?apikey=HelgaZex">Random Dadu</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cersex?apikey=HelgaZex">Random Cersex</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/pantun?apikey=HelgaZex">Random Pantun</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/cita-cita?apikey=HelgaZex">Random Cita Cita</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/meme?apikey=HelgaZex">Random meme</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/dark-jokes?apikey=HelgaZex">Random Dark Jokes</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/random/bokep?apikey=HelgaZex">Random Bokep</a></li>
+          <hr>
+          <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/teknologi?apikey=HelgaZex">Wallpaper Technology</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/programming?apikey=HelgaZex">Wallpaper programming</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/Cyberspace?apikey=HelgaZex">Wallpaper Cyber Space</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/muslim?apikey=HelgaZex">Wallpaper Muslim</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/pegunungan?apikey=HelgaZex">Wallpaper Mountain</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/wallpaper/game?apikey=HelgaZex">Wallpaper Game</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-gacha" aria-expanded="false" aria-controls="ui-gacha">
+          <span class="menu-icon">
+          <i class="mdi mdi-emoticon-happy"></i>
+          </span>
+          <span class="menu-title">Gacha API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-gacha">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/asupan?apikey=HelgaZex">Random Asupan</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/asupan-ukhty?apikey=HelgaZex">Random Asupan Ukhty</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/asupan-chika?apikey=HelgaZex">Random Asupan Chika</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/ukhty?apikey=HelgaZex">Gacha Ukhty</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/cewe-indo?apikey=HelgaZex">Gacha Cewek Indo</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/cewe-thailand?apikey=HelgaZex">Gacha Cewek Thailand</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/cewe-vietnam?apikey=HelgaZex">Gacha Cewek Vietnam</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/bts?apikey=HelgaZex">Random BTS</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/exo?apikey=HelgaZex">Random EXO</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/gacha/black-pink?apikey=HelgaZex">Random Black Pink</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-search" aria-expanded="false" aria-controls="ui-search">
+          <span class="menu-icon">
+          <i class="mdi mdi-google-chrome"></i>
+          </span>
+          <span class="menu-title">Searching API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-search">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/search/xnxx?apikey=HelgaZex&query=moms">Xnxx Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/cersex?apikey=HelgaZex&query=tante">Cersex Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/sticker?apikey=HelgaZex&query=pentol">Sticker Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/wattpad?apikey=HelgaZex&query=tere liye">Wattpad Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/tiktok?apikey=HelgaZex&query=chikaku">Search Tiktok Hastag</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/brainly?apikey=HelgaZex&query=sejarah indonesia">Brainly Search</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/google_play?apikey=HelgaZex&query=WhatsApp">Google Play</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/image?apikey=HelgaZex&query=WhatsApp">Google Image</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/image2?apikey=HelgaZex&query=chikaku">Google Image 2</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/pinterest?apikey=HelgaZex&query=mountain">Search Pinterest</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/trend_twitter?apikey=HelgaZex&query=indonesia">Trending Twitter</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/chordlagu?apikey=HelgaZex&query=Monolog">Search Chord Lagu</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/search/liriklagu?apikey=HelgaZex&query=Monolog-pamungkas">Search Lirik</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-movie" aria-expanded="false" aria-controls="ui-movie">
+          <span class="menu-icon">
+          <i class="mdi mdi-movie"></i>
+          </span>
+          <span class="menu-title">Movie API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-movie">
+          <ul class="nav flex-column sub-menu">
+          <small class="collapse-header text-uppercase">> Film Apik</small>
+          <li class="nav-item"> <a class="nav-link" href="/api/filmapik/search?query=titanic&apikey=HelgaZex">Search Film</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/filmapik/kategori?query=action&apikey=HelgaZex">Search Category Film </a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/filmapik/terbaru?apikey=HelgaZex">New Film</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/filmapik/play?query=142455&apikey=HelgaZex">Play Film By ID</a></li>
+          
+          <small class="collapse-header text-uppercase">> Lk21</small>
+          
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/search?query=avenger&apikey=HelgaZex">Search Film</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/terbaru?apikey=HelgaZex">New Film</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/comingsoon?apikey=HelgaZex">Film Comming Soon</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/tvseries?apikey=HelgaZex">TV Series</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/year?query=2021&apikey=HelgaZex">Film Berdasarkan Tahun</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/country?query=indonesia&apikey=HelgaZex">Film Berdasarkan Negara</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/lk21/genre?query=Horor&apikey=HelgaZex">Film Berdasarkan Genre</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-information" aria-expanded="false" aria-controls="ui-information">
+          <span class="menu-icon">
+          <i class="mdi mdi-code-not-equal"></i>
+          </span>
+          <span class="menu-title">Information API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-information">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/info/loker?apikey=HelgaZex">Info Loker</a></li> 
+          <li class="nav-item"> <a class="nav-link" href="/api/info/gempa?apikey=HelgaZex">Info Gempa</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/cuaca?apikey=HelgaZex&query=banyuwangi">Info Cuaca</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/rs-rujukan?apikey=HelgaZex">Info Rs Rujukan Covid19</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/covidindo?apikey=HelgaZex">Info Covid Indonesia</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/covidworld?apikey=HelgaZex">Info Covid Dunia</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/kbbi?query=pohon&apikey=HelgaZex">KBBI</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/kodepos?query=jakarta&apikey=HelgaZex">Info Kode Pos</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/info/jadwal-bioskop?apikey=HelgaZex">Info Jadwal Bioskop</a></li>
+          
+          <small class="collapse-header text-uppercase">> Primbon Menu</small>
+          
+          <li class="nav-item"> <a class="nav-link" href="/api/primbon/jodoh?apikey=HelgaZex&text=Farhan&text2=Iriene">Primbon Jodoh</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/primbon/arti-nama?apikey=HelgaZex&query=Farhan">Arti Nama</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/primbon/arti-mimpi?apikey=HelgaZex&query=belanja">Arti Mimpi</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/primbon/nomer-hoki?apikey=HelgaZex&query=08311800241">Nomer Hoki</a></li>
+          </ul>
+          </div>
+          </li>
+          <li class="nav-item menu-items">
+          <a class="nav-link" data-toggle="collapse" href="#ui-tools" aria-expanded="false" aria-controls="ui-tools">
+          <span class="menu-icon">
+          <i class="mdi mdi-wrench"></i>
+          </span>
+          <span class="menu-title">Tools API</span>
+          <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-tools">
+          <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/api/tools/upload">Upload File</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/tools/web2plain-text?apikey=HelgaZex&url=https://fxc7-api.herokuapp.com">Web To Plain text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/tools/fetch?apikey=HelgaZex&url=https://fxc7-api.herokuapp.com">Web To Text</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/tools/cekip?apikey=HelgaZex">Cek IP</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/tools/wpuser?apikey=HelgaZex&url=http://gdjms.co.za/">Wordpress Username</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/tools/dorking?apikey=HelgaZex&query=inurl:/admin/login">Dorking Tools</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/short/tinyurl?url=https://fxc7-api.herokuapp.com&apikey=HelgaZex">Short Tinyurl</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/short/bitly?url=https://fxc7-api.herokuapp.com&apikey=HelgaZex">Short Bitly</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/short/shorturl?url=https://fxc7-api.herokuapp.com&apikey=HelgaZex">Short shorturl</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/short/cuttly?url=https://fxc7-api.herokuapp.com&apikey=HelgaZex">Short Cuttly</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/translate?query=hai apa kabar&to=en&apikey=HelgaZex">Translate</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/fakedata?country=en&apikey=HelgaZex">Fake Data</a></li>
+          
+          <small class="collapse-header text-uppercase">> Encrypt Tools</small>
+          <li class="nav-item"> <a class="nav-link" href="/api/encrypt/utf8?apikey=HelgaZex&text=FaR = han">UTF-8</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/encrypt/bacon?apikey=HelgaZex&text=Farhan">Bacon</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/encrypt/md5?apikey=HelgaZex&text=Farhan">Md5</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/encrypt/sha-1?apikey=HelgaZex&text=Fxc7">Sha-1</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/base?apikey=HelgaZex&type=base64&encode=Farhan">Base 64</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/base?apikey=HelgaZex&type=base32&encode=Farhan">Base 32</a></li>
+          
+          <small class="collapse-header text-uppercase">> Decrypt Tools</small>
+          <li class="nav-item"> <a class="nav-link" href="/api/decrypt/utf8?apikey=HelgaZex&text=FaR_=3D_Han">UTF-8</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/decrypt/bacon?apikey=HelgaZex&text=AABABAAAAABAAAAAABBBAAAAAABBAA">Bacon</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/base?apikey=HelgaZex&type=base64&decode=Farhan">Base 64</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/api/base?apikey=HelgaZex&type=base32&decode=Farhan">Base 32</a></li>
+          </ul>
+          </div>
+          </li><!--
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-apikey" aria-expanded="false" aria-controls="ui-apikey">
+              <span class="menu-icon">
+                <i class="mdi mdi-key-variant"></i>
+              </span>
+              <span class="menu-title">Apikey</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-apikey">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a href="https://wa.me/628311800241?text=beli+apikey+10k+bang" class="nav-link">10k/Month + costum</a> </li>
+              <hr>
+                <li class="nav-item"> <a href="/api/cekkey?apikey=Your Apikey" class="nav-link">Cek Apikey</a></li>
+              </ul>
+            </div>
+          </li>--><br>
+          <div class="row col align-item-center ml-5 md-7 mb-3">
+            <small class="text-center font-weight-bold text-uppercase">Made With ❤️ Helga Zex</small>
+          </div>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://github.com/HelgaIlham">
+              <span class="menu-icon">
+                <i class="mdi mdi-github-circle"></i>
+              </span>
+              <span class="menu-title">Github</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://wa.me/6285157740529">
+              <span class="menu-icon">
+                <i class="mdi mdi-whatsapp"></i>
+              </span>
+              <span class="menu-title">WhatsApp</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://www.facebook.com/HelgaZex">
+              <span class="menu-icon">
+                <i class="mdi mdi-facebook"></i>
+              </span>
+              <span class="menu-title">Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://instagram.com/helga_store20">
+              <span class="menu-icon">
+                <i class="mdi mdi-instagram"></i>
+              </span>
+              <span class="menu-title">Instagram</span>
+            </a>
+          </li>
+        </ul>
+       </font>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><big><i class="mdi mdi-biohazard text-primary"></i></big></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="Helga Zex APIs">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="mdi mdi-view-grid"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Info New Update</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Change Template</p>
+                      <p class="text-muted ellipsis mb-0"> Cuman Ganti Template Bang:v </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-wrench text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">+ Fitur NSFW & SFW</p>
+                      <p class="text-muted ellipsis mb-0"> Tambah Beberapa Fitur NSFW & SFW </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-wrench text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">+ Informasi Terupdate Corona Indonesia</p>
+                      <p class="text-muted ellipsis mb-0"> Menampilkan Statistic Covid19</p>
+                    </div>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="https://k.top4top.io/p_21502xe2o0.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Ahmad Farhan</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-danger text-uppercase">IP Address</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0" id="ip">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success">
+                          <span class="mdi mdi-access-point-network icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Your IP Address</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Your Battery</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                        	<span id="batteryLevel"></span>
+                          <h3 class="mb-0" id="percentageLevel">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-battery-positive"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Percentase Your Battery</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-success text-uppercase">Visitor</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h3 class="mb-0" id="visits">Waiting...</h3>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-eye icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Visit Web</font>
+                  </div>
+                </div>
+              </div>
+            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-info text-uppercase">Date</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h4 class="mb-0" id="tanggal">Waiting...</h4>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-calendar icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Date Now</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="font-weight-bold text-success text-uppercase">Clock</h5>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h4 class="mb-0" id="Clock">Waiting...</h4>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-clock icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal" id="Ucapan">Ucapan</font>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="font-weight-bold text-info text-uppercase">Road To Idul Adha</h6>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="d-flex align-items-center align-self-start">
+                          <h5 class="mb-0" id="IdulAdha">Waiting...</h5>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="icon icon-box-success ">
+                          <span class="mdi mdi-star icon-item"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <font face="Original Surfer" class="text-muted font-weight-normal">Menuju Idul Adha</font>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form action="/api/cekapikey?apikey=">
+              <div class="card card-round mt-5 stretch-card grid-margin">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h4 class="m-0 font-weight-bold text-warning"><i class="mdi mdi-key"></i>  &nbsp; CEK APIKEY</h4>
+                </div>
+               <div class="card-body">
+                 <p class="status" style="font-size: 17px;"></p>
+                   <div class="form-group">
+                     <input class="form-control font-weight-bold text-center" type="text" placeholder="Masukkan Apikey" name="apikey" required>
+                   </div>
+                   <div class="form-group"><center>
+                     <button type="submit" class="btn btn-primary content-justify-center"><i class="mdi mdi-arrow-right-bold-hexagon-outline"></i> <span class="font-weight-bold"> Submit</span></button></center>
+                   </div>
+               </div>
+             </div>
+            </form>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-5404310597803049" data-ad-slot="6657550061"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            <div class="row">
+              <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="mt-3 btn btn-outline-danger bg-transparent">
+                    <div id="demo" class="alert btn btn-outline-danger" role="alert">
+                      <span id="Statistic">Waiting...</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+              <div class="card">
+              <div class="card-body">
+              </div>
+              <canter><h4 class="card-title">FITUR LAINNYA</h4>
+              <div class="template-demo">
+              <button type="button" id="sbs" class="btn btn-dark btn-lg btn-block" onclick="githubstalk()">GITHUB STALK</button>
+              <button type="button" id="sbs" class="btn btn-dark btn-lg btn-block" onclick="jadwal()">JADWAL SHOLAT</button>
+              <button type="button" id="sbs" class="btn btn-dark btn-lg btn-block" onclick="hilihgen()">HILIH GENERATOR</button>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                      <h6 class="text-center font-weight-bold">HelgaZex Rest APIs</h6><hr color="blue">
+                     <div class="row content-justify-center">
+                       <img width="150px" height="150px" class="rounded-circle img-thumbnail" id="image" src="" alt="sad:)"><hr>
+                         <div class="col">
+                      <font size="2" face="Original Surfer" class="col mt-3 text-center text-uppercase font-weight-bold">&nbsp; &nbsp; &nbsp; &nbsp;Thanks To:<br>• Zahirr<br>• Manurios<br>• Wawan<br>• Rakha<br>• Fxc7 Team<br> <font color="blue">Ini Tulisan Warna Biru</font></font>
+                         </div>
+                     </div><hr>
+                     <font class="font-weight-bold" face="Original Surfer">
+                     <small class="text-center">• Jika Menemukan Bug/Typo Harap Segera Lapor <a href="https://wa.me/6285157740529">Disini</a></small><br>
+                     <small class="text-center">• Semua Fitur Free Gan</small><br>
+                     <small class="text-center">• Maaf Bang Pemula Masih Belajar:)</small>
+                     <small class="text-center"><br>• Apikey: <b>Helga Zex</b></small>
+                     <small class="text-center"><br>• Costum Apikey?? <a href="https://wa.me/628515770520?text=bang+mau+costum+apikey+berapa?">Klik Disini</a></small>
+                     </font>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <div class="bg-dark btn btn-block btn-outline-danger">
+                <font face="Original Surfer" class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © <span id="Years">00</span> Helga Zex</font>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      swal({
+        title: 'Welcome To Rest Api Helga Zex',
+        text: 'Maaf klo bnyak yg error:)',
+        imageUrl: 'https://k.top4top.io/p_21502xe2o0.jpg',
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: 'I am Fine:)',
+        animation: true
+      })
+    </script>
+			<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>   
+    <script async src="hit/api-fxc7.herokuapp.com/visits_callback_cb.js"></script>
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/ojan.js"></script>
+  <center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">Website Downloader</a></font></center></body>
+</html>
